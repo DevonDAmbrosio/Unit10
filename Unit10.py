@@ -16,3 +16,7 @@ pres_list = ["Washington", "Adams", "Jefferson", "Madison", "Monroe", "Adams", "
              "Coolidge", "Hoover", "Roosevelt", "Truman", "Eisenhower", "Kennedy", "Johnson", "Nixon", "Ford", "Carter",
              "Reagan", "Bush", "Clinton", "Bush", "Obama", "Trump", "Biden"]
 
+textList = []
+for i in relatedTopics:
+    textList.append(i["Text"])
+

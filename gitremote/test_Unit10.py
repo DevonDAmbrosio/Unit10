@@ -12,3 +12,11 @@ from Unit10 import *
 def test_ddg0_for_presidents(president):
     for i in relatedTopics:
         assert any(elem in i["Text"] for elem in president)
+
+@pytest.mark.parametrize("president", pres_list)
+def test_ddg1_for_presidents(president):
+    textList = ""
+    for i in relatedTopics:
+        textList += i["Text"]
+
+    assert president in textList
