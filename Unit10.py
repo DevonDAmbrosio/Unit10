@@ -2,9 +2,7 @@ import requests
 import pytest
 
 url = 'https://api.duckduckgo.com/'
-
 response = requests.get(url + '?q=presidents+of+the+united+states&format=json')
-
 my_json = response.json()
 
 # Made variable for readability
@@ -16,7 +14,4 @@ pres_list = ["Washington", "Adams", "Jefferson", "Madison", "Monroe", "Adams", "
              "Coolidge", "Hoover", "Roosevelt", "Truman", "Eisenhower", "Kennedy", "Johnson", "Nixon", "Ford", "Carter",
              "Reagan", "Bush", "Clinton", "Bush", "Obama", "Trump", "Biden"]
 
-textList = []
-for i in relatedTopics:
-    textList.append(i["Text"])
 
