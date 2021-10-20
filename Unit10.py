@@ -6,6 +6,8 @@ url = 'https://api.duckduckgo.com/'
 response = requests.get(url + '?q=presidents+of+the+united+states&format=json')
 
 my_json = response.json()
+
+# Made variable for readability
 relatedTopics = my_json['RelatedTopics']
 
 pres_list = ["Washington", "Adams", "Jefferson", "Madison", "Monroe", "Adams", "Jackson", "Buren", "Harrison", "Tyler",
